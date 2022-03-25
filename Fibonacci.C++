@@ -6,14 +6,14 @@ using namespace std;
 
 int main()
 {
-    int x = 0, y = 1, count = 0, fibo, n;
+    int x = 0, y = 1, i, fibo, n;
     cout << "Enter number = ";
     cin >> n;
-    while(count < n)
+    for(i = 0; i < n; i++)
     {
-        if(count <= 1)
+        if(i <= 1)
         {
-            fibo = count;
+            fibo = i;
         }else
         {
             fibo = x + y;
@@ -21,7 +21,6 @@ int main()
             y = fibo;
         }
         cout << fibo << " ";
-        count++;
     }
     getch();
 }
