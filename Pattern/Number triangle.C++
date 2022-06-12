@@ -357,7 +357,7 @@ Enter a number= 5
  1 2 3 4 5
 
 
-(i2)
+(ii)
 Print
      1
     2 2
@@ -399,11 +399,87 @@ Enter a number= 5
  5 5 5 5 5
 
 
+(iii)
+Print
+ 1 2 3 4 5
+  1 2 3 4
+   1 2 3
+    1 2
+     1
+ 
+#include<iostream>
+#include<conio.h>
+using namespace std;
+ 
+int main()
+{
+    int n, row, col;
+    cout << " Enter a number= ";
+    cin >> n;
 
+    for(row = n; row >= 1; row--)
+    {
+        for(col = 1; col <= n-row; col++)
+        {
+            cout << " ";
+        }
+        for(col = 1; col <= row; col++)
+        {
+            cout << " " << col;
+        }
+        cout << endl;
+    }
+    getch();
+}
 
+//Output
+Enter a number= 5
+ 1 2 3 4 5
+  1 2 3 4
+   1 2 3
+    1 2
+     1
+ 
+(iv)
+Print
+ 5 5 5 5 5
+  4 4 4 4
+   3 3 3
+    2 2
+     1
+ 
+#include<iostream>
+#include<conio.h>
+using namespace std;
+ 
+int main()
+{
+    int n, row, col;
+    cout << " Enter a number= ";
+    cin >> n;
 
+    for(row = n; row >= 1; row--)
+    {
+        for(col = 1; col <= n-row; col++)
+        {
+            cout << " ";
+        }
+        for(col = 1; col <= row; col++)
+        {
+            cout << " " << row;
+        }
+        cout << endl;
+    }
+    getch();
+}
 
-
+//Output
+Enter a number= 5
+ 5 5 5 5 5
+  4 4 4 4
+   3 3 3
+    2 2
+     1
 
 
 
