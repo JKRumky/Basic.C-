@@ -613,7 +613,7 @@ int main()
     {
         for(col = 1; col <= row; col++)
         {
-            cout << "  " << ++x;
+            cout << " " << ++x;
         }
         cout << endl;
     }
