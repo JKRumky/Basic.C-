@@ -592,6 +592,46 @@ Enter a number= 5
 (i)
 Print
  1
+ 2 3
+ 4 5 6
+ 7 8 9 10
+ 11 12 13 14 15
+
+#include<iostream>
+#include<conio.h>
+using namespace std;
+ 
+int main() 
+{
+    int n, row, col;
+    int x=0;
+ 
+    cout << "Enter a number= ";
+    cin >> n;
+
+    for(row = 1; row <= n; row++)
+    {
+        for(col = 1; col <= row; col++)
+        {
+            cout << "  " << ++x;
+        }
+        cout << endl;
+    }
+    getch();
+}
+ 
+//Output
+Enter a number= 5
+ 1
+ 2 3
+ 4 5 6
+ 7 8 9 10
+ 11 12 13 14 15
+ 
+ 
+(ii)
+Print
+ 1
  2 4
  3 6 9
  4 8 12 16
