@@ -234,7 +234,7 @@ int main()
     cout << "Enter a number= ";
     cin >> n;
  
-    for(row = n; row >= 1; row++)
+    for(row = n; row >= 1; row--)
     {
         for(col = 1; col <= n-row; col++)
         {
@@ -294,3 +294,167 @@ Enter a number= 5
 * * * * * 
 * * * * * 
 * * * * * 
+
+ 
+(viii)
+//Print
+* * * * 
+*     * 
+*     * 
+* * * * 
+
+
+#include<iostream>
+#include<conio.h>
+using namespace std;
+
+int main()
+{
+    int n, row, col;
+    cout << "Enter a number= ";
+    cin >> n;
+
+    for(row = 1; row <= n; row++)
+    {
+        for(col = 1; col <= n; col++)
+        {
+            if(row == 1 || row == n || col == 1 || col == n)
+            {
+                cout << "* ";
+            }
+            else
+            {
+                cout << "  "; //space = 2
+            }
+        }
+        cout << endl;
+    }
+    getch();
+}
+
+//Output:
+Enter a number= 5
+* * * * * 
+*       * 
+*       * 
+*       * 
+* * * * * 
+ 
+ 
+(ix)
+//Print
+*
+* *       
+*   *        
+* * * * 
+ 
+#include<iostream>
+#include<conio.h>
+using namespace std;
+
+int main()
+{
+    int n, row, col;
+    cout << "Enter a number= ";
+    cin >> n;
+
+    for(row = 1; row <= n; row++)
+    {
+        for(col = 1; col <= n; col++)
+        {
+            if(col == 1 || row == n || col == row)
+            {
+                cout << "* ";
+            }
+            else
+            {
+                cout << "  ";
+            }
+        }
+        cout << endl;
+    }
+    getch();
+}
+ 
+//Output:
+Enter a number= 5 
+*
+* *       
+*   *     
+*     *   
+* * * * * 
+ 
+ 
+(x)
+//Print
+*       * 
+  *   *   
+    *     
+  *   *   
+*       *
+ 
+#include<iostream>
+#include<conio.h>
+using namespace std;
+
+int main()
+{
+    int n, row, col;
+    cout << "Enter a number= ";
+    cin >> n;
+
+    for(row = 1; row <= n; row++)
+    {
+        for(col = 1; col <= n; col++)
+        {
+            if(row == col || row + col == n + 1)
+            {
+                cout << "* ";
+            }
+            else
+            {
+                cout << "  ";
+            }
+        }
+        cout << endl;
+    }
+    getch();
+}
+ 
+//Output:
+Enter a number= 5 
+*       * 
+  *   *   
+    *     
+  *   *   
+*       *
+ 
+ 
+(x)
+//Print
+ 
+ 
+#include<iostream>
+#include<conio.h>
+using namespace std;
+
+int main()
+ 
+//Output:
+Enter a number= 5 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
