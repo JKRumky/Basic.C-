@@ -106,14 +106,39 @@ Average : 52
 Maximum marks = 78
 Minimum marks = 23
 ###################################################################
-4. :
+4. Linear search:
 #include<iostream>
 #include<conio.h>
 using namespace std;
 
 int main()
+{
+    int A[] = {10,20,30,40,50,60};
+    int value, pos= -1, i;
 
+    cout << "Enter the number= ";
+    cin >> value;
+
+    for(i=0; i < 7; i++)
+    {
+        if(value == A[i])
+        {
+            pos = i+1;
+            break;
+        }
+    }
+    if(pos == -1)
+    {
+        cout << "Item is not found ";
+    }else
+    {
+        cout << "Item is found " << pos;
+    }
+    getch();
+}
 //output:
+Enter the number= 40
+Item is found 4
 ###################################################################
 5. :
 #include<iostream>
